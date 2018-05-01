@@ -32,6 +32,7 @@ Component: Este es el etereotipo general y permite anotar un bean para que sprin
 Repository: Este estereotipo es el encargado de dar de alta un bean para que implemente el patron repositorio el cual es el encargado de almacenar datos en una base de datos o un repositorio. Cuando se mara el bean con esta anotacion spring aporta servicios como la conversion de tipos de excepciones.
 Service: Este estereotipo es el encargado de gestionar las operaciones de negocio mas importantes a nivel aplicacion. Realiza llamadas simultaneas a varios repositorios de forma simultanea.
 Controller: Este estereotipo realiza las tareas de controlar y gestionar la comunicacion entre el usuario y el aplicativo.Para esto utiliza algun motor de plantillas o librerias de etiquetas que faciliten la creacion de paginas.
+ADJUNTO LOS DIAGRAMAS.
 
 *Verbos
 Get: Realiza consultas y lee recursos.
