@@ -103,4 +103,27 @@ public class logController {
 
         return SO;
     }
+
+    //Sistema operativo con navegador mas utilizado
+    @RequestMapping(value = "/sistemaynavegador")
+    public String sistemaConNavegador(){
+        List<Log> lista = traerTodos();
+        int countWindowsYchrome = 0;
+        int countWindowsYexplorer = 0;
+        String masUsado;
+
+        for(Log e : lista){
+            if (e.getSistemaOperativo().equals("Windows 10") && e.getNavegador().equals("Chrome"))
+                countWindowsYchrome++;
+            else
+                countWindowsYexplorer++;
+        }
+
+        if (countWindowsYchrome > countWindowsYexplorer)
+            masUsado = "Windows 10 y chrome";
+            else
+                masUsado = "Windows 10 e internet explorer";
+
+        return masUsado;
+    }
 }
